@@ -1,0 +1,36 @@
+
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=3&page=0
+
+###
+GET http://localhost:3000/api/tasks?size=3&page=0&title=wix
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Tarea 1",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/603683d681f6d34958002cfb
+
+###
+DELETE http://localhost:3000/api/tasks/603683d681f6d34958002cfb
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/60367c7ec37b6c30d48d415a
+Content-Type: application/json
+
+{
+    "title": "Crear un sition web en Wix"
+}
